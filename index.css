@@ -1,0 +1,536 @@
+:root {
+  /* max-width: 1280px; */
+  margin: 0;
+  padding: 0;
+
+  /* BRAND COLOR */
+  --rc-color-brand: #010101;
+
+  /* COLOR PALETTE */
+  --rc-color-n-000: #ffffff;
+  --rc-color-n-050: #ffd700;
+  --rc-color-n-100: #ffd700;
+  --rc-color-n-300: #aeaeae;
+  --rc-color-n-500: #f6da92;
+  --rc-color-n-700: #2c0fc0cb;
+  --rc-color-n-900: #1a1a1a;
+
+  /* BACKGROUND */
+  --rc-bg-color-primary: #eabe82;
+  --rc-bg-color-secundary: #6db2e7;
+
+  /* BACKGROUND COLOR */
+  --rc-color-background-primary: var(--rc-color-n-000);
+  --rc-color-background-secondary: var(--rc-color-n-050);
+
+  /* TYPOGRAPHY COLOR */
+  --rc-color-typography-heading: var(--rc-color-n-500);
+  --rc-color-typography-body: var(--rc-color-n-900);
+  --rc-color-typography-note: var(--rc-color-n-300);
+  --rc-color-typography-button: var(--rc-color-n-000);
+  --rc-color-typography-h1: var(--rc-color-n-900);
+  --rc-color-typography-h2: var(--rc-color-n-900);
+  --rc-color-typography-h3: var(--rc-color-n-000);
+  --rc-color-typography-h4: var(--rc-color-n-000);
+
+  /* TYPOGRAPHY TYPE */
+
+  /* FONT SIZE */
+  --rc-typography-h: 1.8rem;
+  --rc-typography-h1: 1.9375rem;
+  --rc-typography-h2: 1.5625rem;
+  --rc-typography-h3: 1.25rem;
+  --rc-typography-h4: 1rem;
+  --rc-typography-p: 0.75rem;
+  --rc-typography-s: 0.8125rem;
+
+  /* MARGIN */
+  --rc-typography-margin-heading: 0.75rem;
+  --rc-typography-margin-nav: 1rem;
+  --rc-typography-margin-general: 1rem;
+  --rc-typography-margin-body: 1.125rem;
+  --rc-typography-margin-x: 1.125rem;
+
+  /* PADDING */
+  --rc-typography-pading-h: 5rem;
+  --rc-typography-pading-heading: 0.75rem;
+  --rc-typography-pading-nav: 1rem;
+  --rc-typography-pading-general: 1rem;
+  --rc-typography-pading-body: 1.125rem;
+  --rc-typography-pading-x: 1.125rem;
+  --rc-typography-pading-s: 0.65rem;
+  --rc-typography-pading-xs: 0.125rem;
+  --rc-typography-pading-xxxl: 7rem;
+
+  /* GAP */
+  --rc-typography-pading-heading: 0.75rem;
+  --rc-typography-pading-nav: 1rem;
+  --rc-typography-pading-general: 1rem;
+  --rc-typography-pading-body: 1.125rem;
+  --rc-typography-pading-x: 1.125rem;
+  --rc-typography-pading-s: 0.65rem;
+  --rc-typography-pading-xs: 0.125rem;
+
+  /* BORDER RADIUS */
+  --rc-radius-card: 0.5rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(assets/cropped-cropped-cropped-cabecera_web-5-1.png);
+}
+
+.navbar {
+  font-size: var(--rc-typography-h3);
+  display: flex;
+  flex-direction: column;
+  filter: grayscale(0.5);
+  /* width: 100%; */
+}
+
+.main-nav {
+  list-style-type: none;
+  display: none;
+  justify-content: space-evenly;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: var(--rc-color-n-000);
+  font-size: var(--rc-typography-h1);
+}
+
+.main-nav li {
+  text-align: center;
+  margin: var(--rc-typography-margin-nav);
+  font-size: var(--rc-typography-h1);
+}
+.nav-links {
+  font-size: var(--rc-typography-h3);
+  cursor: pointer;
+}
+
+.logo {
+  display: inline-block;
+  font-size: var(--rc-typography-h2);
+}
+
+.navbar-toggle {
+  position: absolute;
+  align-items: center;
+  right: 20px;
+  cursor: pointer;
+  font-size: var(--rc-typography-h2);
+}
+
+#chkToggle {
+  display: none;
+}
+
+#chkToggle:checked + ul.main-nav {
+  display: block;
+}
+
+/* --------------- HERO ---------------*/
+.hero {
+  text-align: center;
+  background-image: url(https://i.pinimg.com/736x/9b/f1/7b/9bf17b63d5460a7daa9e8bac0a5e81b5.jpg);
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.ul-hero {
+  padding: var(--rc-typography-pading-nav);
+}
+
+.ul-hero > li {
+  list-style: none;
+  padding: var(--rc-typography-pading-nav);
+  text-align: center;
+}
+
+.img-hero > img {
+  border-radius: 10%;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* --------------- CARTA COMIDAS---------------*/
+
+article {
+  padding: var(--rc-typography-pading-general);
+}
+a {
+  cursor: pointer;
+  color: var(--rc-color-n-000);
+  text-decoration: none;
+  padding: var(--rc-typography-pading-s);
+}
+
+.img-plato {
+  width: 100%;
+}
+
+.img-plato > img {
+  width: 100%;
+  border-radius: 10%;
+}
+
+.card-comida {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: var(--rc-typography-margin-general);
+  /* border: 2px solid red; */
+  background-color: rgba(150, 149, 149, 0.8);
+  border-radius: 20%;
+}
+.titulo-seccion {
+  width: fit-content;
+  background-color: rgba(150, 149, 149, 0.8);
+  border-radius: 20%;
+  color: var(--rc-color-n-000);
+  text-transform: uppercase;
+}
+
+.ul-details {
+  margin-bottom: var(--rc-typography-margin-general);
+}
+.ul-details > li {
+  list-style: none;
+  padding: var(--rc-typography-pading-xs);
+}
+
+/* --------------- CARTA COMIDA MARVEL---------------*/
+.section-marvel {
+  background-image: url(https://pm1.narvii.com/6133/68f5dfdb5e161371a10a10a32f30580b5648afc9_hq.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.comida-marvel {
+  color: var(--rc-color-n-000);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-comida-marvel {
+  color: var(--rc-color-n-100);
+  text-align: center;
+}
+
+/* ------------- CARTA COMIDA WOW ------------- */
+.titulo-seccion {
+  width: fit-content;
+  background-color: rgba(150, 149, 149, 0.8);
+  border-radius: 20%;
+  color: var(--rc-color-n-000);
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-wow {
+  background-image: url(https://w.forfun.com/fetch/a2/a27579388ef73136186a957260a34aa5.jpeg?h=900&r=0.5);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.comida-wow {
+  color: var(--rc-color-n-000);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-comida-marvel {
+  color: var(--rc-color-n-100);
+  text-align: center;
+  border-radius: 10%;
+}
+
+/* ------------- CARTA COMIDA PELIS------------- */
+
+.section-series {
+  background-image: url(assets/vista-superior-tazon-lentejas-variedad-condimentos.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.comida-marvel {
+  color: var(--rc-color-n-000);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-comida-marvel {
+  color: var(--rc-color-n-100);
+  text-align: center;
+}
+
+/* ---------- footer --------- */
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: grey;
+}
+span {
+  color: whitesmoke;
+}
+
+@media screen and (min-width: 620px) {
+  /* NAV BAR */
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    background-image: url(assets/cropped-cropped-cropped-cabecera_web-5-1.png);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    filter: opacity(0.9);
+    border-bottom: 3px solid black;
+  }
+  .hero {
+    padding-top: var(--rc-typography-pading-h);
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .logo {
+    display: flex;
+    width: 50%;
+    margin-top: 0;
+    font-size: var(--rc-typography-h);
+  }
+  .main-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: none;
+    justify-content: flex-end;
+  }
+
+  #chkToggle:checked + ul.main-nav {
+    display: flex;
+  }
+
+  .main-nav li {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-links {
+    font-size: var(--rc-typography-h4);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+  /* ------------- CARTA COMIDA WOW ------------- */
+  .section-wow {
+    background-image: url(https://e1.pxfuel.com/desktop-wallpaper/304/514/desktop-wallpaper-wow-horde-symbol-horde-symbol.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: opacity(0.9);
+  }
+}
+/* ----------------- body ----------------- */
+.hero {
+  /* margin-top: var(--rc-typography-margin-x*); */
+  margin-top: var(--rc-typography-margin-x);
+  padding: var(--rc-typography-pading-general * 3);
+}
+
+@media screen and (min-width: 1024px) {
+  /* ---------------- NAVBAR ---------------- */
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    background-image: url(assets/cropped-cropped-cropped-cabecera_web-5-1.png);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    filter: opacity(0.9);
+    border-bottom: 3px solid black;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .logo {
+    display: flex;
+    width: 50%;
+    margin-top: 0;
+    font-size: var(--rc-typography-h1);
+  }
+  .main-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: none;
+    justify-content: flex-end;
+  }
+
+  #chkToggle:checked + ul.main-nav {
+    display: flex;
+  }
+
+  .main-nav li {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-links {
+    font-size: var(--rc-typography-h4);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+  /* ------------ CARTA COMIDA MARVEL-------------- */
+
+  .hero {
+    margin-top: --rc-typography-margin-x;
+  }
+
+  .section-marvel {
+    background-image: url(https://pm1.narvii.com/6133/68f5dfdb5e161371a10a10a32f30580b5648afc9_hq.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid white;
+  }
+
+  .comida-marvel {
+    color: var(--rc-color-n-000);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .comida-pelis {
+    background-color: var(--rc-color-n-000);
+    color: black;
+  }
+  .card-comida {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--rc-typography-pading-general);
+    /* border: 2px solid red; */
+    width: fit-content;
+    background-color: rgba(150, 149, 149, 0.8);
+    border-radius: 20%;
+  }
+
+  .img-plato {
+    width: 600px;
+  }
+  /* .img-plato > img {
+    width: 600px;
+  } */
+
+  .img-plato :hover {
+    filter: grayscale(0);
+  }
+  .img-plato > img {
+    filter: grayscale(0.7);
+  }
+
+  /* ------------- CARTA COMIDA WOW ------------- */
+
+  .section-wow {
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/288/402/399/world-of-warcraft-arthas-world-of-warcraft-wrath-of-the-lich-king-wallpaper-preview.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: start;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border: 2px solid red;
+  }
+
+  .comida-wow {
+    color: var(--rc-color-n-000);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: transparent;
+  }
+
+  .card-comida-wow {
+    color: var(--rc-color-n-100);
+    text-align: center;
+  }
+  .img-plato {
+    width: 600px;
+    border-radius: 10%;
+  }
+}
